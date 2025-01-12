@@ -3,12 +3,35 @@
         display:flex;
         justify-content: center;
         align-items: center;
+
         padding:16px;
 
+        form{
+            border: 1px solid blue;
+            border-radius: 4px;
+            padding: 12px 0;
+
+        }
+        
         .form-group{
             display:flex;
             justify-content: center;
+            flex-direction: column;
             padding:16px;
+            gap:16px;
+            .btn-primary{
+                background-color: blue;
+                color:white;
+                padding:8px;
+                border-radius:4px;
+                cursor:pointer;
+            }
+            .form-control{
+                border: 1px solid blue;
+                padding: 16px;
+                border-radius: 4px;
+            }
         }
     }
+
 }
