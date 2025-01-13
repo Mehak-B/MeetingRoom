@@ -10,7 +10,7 @@ import { AuthService } from 'src/app/service/auth.service';
   styleUrls: ['./home-page.component.scss']
 })
 export class HomePageComponent implements OnInit {
-
+  isthere:boolean = false
   loginForm!:FormGroup;
   constructor(private formBuilder : FormBuilder,
     private auth: AuthService,

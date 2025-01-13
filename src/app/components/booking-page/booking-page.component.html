@@ -1,1 +1,28 @@
-<p>booking-page works!</p>
+   <div>
+   <mat-form-field>
+      <mat-label>Select Room</mat-label>
+      <mat-select [formControl]="roomControl" name="room">
+        <mat-option>None</mat-option>
+        <mat-option *ngFor="let room of allRoomList" [value]="room.value">
+          {{room.viewValue}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+</div>
+
+<div>
+  <mat-form-field>
+    <mat-label>Meeting date</mat-label>
+    <input matInput [matDatepicker]="datepicker" [(ngModel)]="value">
+    <mat-datepicker #datepicker/>
+    <mat-datepicker-toggle [for]="datepicker" matSuffix/>
+  </mat-form-field>
+
+  <div>
+    <label for="appt">Choose a time for your meeting:</label>
+
+    <input type="time" id="appt" name="appt" min="09:00" max="18:00" required />
+    
+    <small>Office hours are 9am to 6pm</small>
+  </div>
+</div>
