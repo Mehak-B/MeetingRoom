@@ -12,13 +12,17 @@ import {MatSelectModule} from '@angular/material/select';
 import {MatNativeDateModule} from '@angular/material/core';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatInputModule} from '@angular/material/input';
+import { ScheduleTableComponent } from './components/schedule-table/schedule-table.component';
+import {MatTableModule} from '@angular/material/table';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HomePageComponent,
-    BookingPageComponent
+    BookingPageComponent,
+    ScheduleTableComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +34,9 @@ MatFormFieldModule,
 MatSelectModule,
 MatNativeDateModule,
 MatDatepickerModule,
-MatInputModule
+MatInputModule,
+MatTableModule
+
 
 
 
